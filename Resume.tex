@@ -27,7 +27,7 @@
 \firstname{Carlos} % Your first name
 \familyname{Soriano} % Your last name
 
-\photo[70pt][0.4pt]{pictures/photo} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\photo[80pt][1.0pt]{pictures/photo} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
 %----------------------------------------------------------------------------------------
@@ -50,10 +50,10 @@
     \end{indentpar}
 
 %----------------------------------------------------------------------------------------
-%	Objetive section
+%	Objective section
 %----------------------------------------------------------------------------------------
 
-\section{Objetive}
+\section{Objective}
 
     \cvitem{}{Research computer science and contribute to open source software}
 
@@ -88,9 +88,11 @@
 
 \cventry{2008--Present}{Computer engineering}{Universitat de Girona}{Girona}{}
 {
-    Best mark and special distinction in Software Engineering course in 2010. \\
-    Best mark in Operating Systems course in 2009. \\
-    Best mark at second round in Computers course in 2009. \\
+    \begin{itemize}
+        \item Best mark and special distinction in Software Engineering course in 2010.
+        \item Best mark in Operating Systems course in 2009.
+        \item Best mark at second round in Computers course in 2009.
+    \end{itemize}
 }
 
 \cventry{2006--2008}{Scientific bachelor}{IES Frederic Marti Carreras}{Girona}{Palafrugell}{}
@@ -103,21 +105,12 @@
 
 \subsection{Computer science}
 
-\cventry{2012--Present}{Researcher assistant}{\textsc{Geometry and Graphics Group}}{Departament d'Inform\`atica i Matem\`atica Aplicada}{Universitat de Girona}
-{
-    Research and development computer graphics procedural modeling with special emphasis on procedural
-    buildings. \\
-    Advised by Dr.Gustavo Patow.
-}
-
-%------------------------------------------------
-
 \cventry{2012--Present}{Contributor and developer}{\textsc{Gnome Desktop Environment}}{OpenGL based desktop for Linux}{}
 {
     \begin{itemize}
-      \item Contributor of Gnome shell submitting patches, discussing and developing for the frontend UI and the backend core.
+      \item Contributor of Gnome shell submitting patches, discussing and developing the frontend UI and the backend core.
       \item Developer of some Gnome shell extensions improving the behaviour of the Gnome shell overview and the Gnome shell windows picker.
-      \item Contributor to the Gnome shell wiki with special emphasis on creating an entire tutorial to do extensions, teaching how Gnome shell works internally.
+      \item Contributor to the Gnome shell wiki with special emphasis on creating an entire tutorial to create extensions.
     \end{itemize}
 }
 
@@ -126,6 +119,15 @@
 \cventry{2011--Present}{Extracurricular professor}{\textsc{Club Tramuntana}}{Girona}{}
 {
     Teaching informatics to 10-15 years old kids.
+}
+
+%------------------------------------------------
+
+\cventry{2010--Present}{Research assistant}{\textsc{Geometry and Graphics Group}}{Departament d'Inform\`atica i Matem\`atica Aplicada}{Universitat de Girona}
+{
+    Research and development computer graphics procedural modeling with special emphasis on procedural
+    buildings. \\
+    Advised by Dr.Gustavo Patow.
 }
 
 %------------------------------------------------
@@ -180,13 +182,17 @@
 
     \subsection{Other contact}
         \begin{indentpar}{72pt}
-            Geometric and Graphics Group email: \emaillink{csoriano@ima.udg.edu} \\
-            Gnome email: \emaillink{csoriano@src.gnome.org}
+            \begin{itemize}
+                \item Geometric and Graphics Group email: \emaillink{csoriano@ima.udg.edu}
+                \item Gnome email: \emaillink{csoriano@src.gnome.org}
+            \end{itemize}           
         \end{indentpar}
         
     \subsection{Websites}
         \begin{indentpar}{72pt}
-            GitHub: \httplink{https://github.com/csoriano89}
+            \begin{itemize}
+                \item GitHub: \httplink{https://github.com/csoriano89}
+            \end{itemize}            
         \end{indentpar}
 
 \end{document}
