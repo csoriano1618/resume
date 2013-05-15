@@ -1,0 +1,198 @@
+%----------------------------------------------------------------------------------------
+%	Configuration
+%----------------------------------------------------------------------------------------
+
+%This is necesary for a idented paragraph
+\newenvironment{indentpar}[1]%
+    {\begin{list}{}%
+        {\setlength{\leftmargin}{#1}}%
+            \item[]%
+     }
+{\end{list}}
+%
+
+\documentclass[11pt,a4paper,roman]{moderncv_custom} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual_custom} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue_custom} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[scale=0.80]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Carlos} % Your first name
+\familyname{Soriano} % Your last name
+
+\photo[80pt][1.0pt]{pictures/photo} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	Personal data section
+%----------------------------------------------------------------------------------------
+
+\section{Personal data}
+    \begin{indentpar}{72pt}
+        Name: Carlos Soriano S\'{a}nchez \\
+        Birth date: 17 December 1989 \\
+        Address: C/Jocs ol\'{i}mpics de Barcelona, 37 3rd 2nd, Spain, Girona, Girona  \\
+        Phone: (+34) 696218473 \\
+        Email: carlos.soriano89@gmail.com
+    \end{indentpar}
+
+%----------------------------------------------------------------------------------------
+%	Objective section
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+
+    \cvitem{}{Research computer science and contribute to open source software}
+
+%----------------------------------------------------------------------------------------
+%	Computer skills section
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+    \cvitem{Concepts}{Computer graphics, desktop environments, core aplications, operating systems}
+    \cvitem{Languages}{Python, C++, JavaScript, Java, C, CSS, HTML, \LaTeX, XML}
+    \cvitem{Operating systems}{Linux}
+    \cvitem{Software tools}{Git, Eclipse, GTK+}
+    \cvitem{Graphics tools}{Houdini, Blender, Gimp, Inkscape, OpenGL}
+    \cvitem{Platforms}{Gnome}
+
+%----------------------------------------------------------------------------------------
+%	Personal skills section
+%----------------------------------------------------------------------------------------
+
+\section{Personal Skills}
+
+    \cvlistitem{Able to work and adapt with large and different projects.}{}
+    \cvlistitem{Able to interact and work with many different people.}{}
+    \cvlistitem{Persistent solving problems.}{}
+    \cvlistitem{Meticulous taking into account available time.}{}
+
+%----------------------------------------------------------------------------------------
+%	Education section
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\cventry{2008--Present}{Computer engineering}{Universitat de Girona}{Girona}{}
+{
+    \begin{itemize}
+        \item Best mark and special distinction in Software Engineering course in 2010.
+        \item Best mark in Operating Systems course in 2009.
+        \item Best mark at second round in Computers course in 2009.
+    \end{itemize}
+}
+
+\cventry{2006--2008}{Scientific bachelor}{IES Frederic Marti Carreras}{Girona}{Palafrugell}{}
+
+%----------------------------------------------------------------------------------------
+%	Experience section
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Computer science}
+
+\cventry{2012--Present}{Contributor and developer}{\textsc{Gnome Desktop Environment}}{OpenGL based desktop for Linux}{}
+{
+    \begin{itemize}
+      \item Contributor of Gnome shell submitting patches, discussing and developing the frontend UI and the backend core.
+      \item Developer of some Gnome shell extensions improving the behaviour of the Gnome shell overview and the Gnome shell windows picker.
+      \item Contributor to the Gnome shell wiki with special emphasis on creating an entire tutorial to create extensions.
+    \end{itemize}
+}
+
+%------------------------------------------------
+
+\cventry{2011--Present}{Extracurricular professor}{\textsc{Club Tramuntana}}{Girona}{}
+{
+    Teaching informatics to 10-15 years old kids.
+}
+
+%------------------------------------------------
+
+\cventry{2010--Present}{Research assistant}{\textsc{Geometry and Graphics Group}}{Departament d'Inform\`atica i Matem\`atica Aplicada}{Universitat de Girona}
+{
+    Research and development computer graphics procedural modeling with special emphasis on procedural
+    buildings. \\
+    Advised by Dr.Gustavo Patow.
+}
+
+%------------------------------------------------
+
+\subsection{Miscellaneous}
+
+\cventry{2005--Present}{Waiter}{\textsc{Camping La Siesta}}{Girona}{Palafrugell}
+{
+    Worked in summers.
+}
+
+%----------------------------------------------------------------------------------------
+%	Languages section
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+    \cvitemwithcomment{Spanish}{Native}{}
+    \cvitemwithcomment{Catalan}{Advanced}{}
+    \cvitemwithcomment{English}{Intermediate}{}
+
+%----------------------------------------------------------------------------------------
+%	Recommendations section
+%----------------------------------------------------------------------------------------
+
+\section{Recommendations}
+    \cventry{Dr.Gustavo Patow}{Head of Geometry and Graphics Group}{}{}{}
+    {
+        Dr.Gustavo Ariel Patow, Geometry and Graphics Group, Departament d'Inform\`atica i Matem\`atica Aplicada, Universitat de Girona. \\
+        Edifici P-IV, Campus Montilivi. \\
+        E-17071 - Girona (Girona). \\
+        Tel: (+34) 972 41 88 32 \\
+        Email: \httplink{dagush@ima.udg.es} \\
+        Web: \emaillink{http://ima.udg.es/\textasciitilde dagush}
+    }
+
+%----------------------------------------------------------------------------------------
+%	Interests section
+%----------------------------------------------------------------------------------------
+% 
+% \section{Interests}
+% 
+%     \cvlistdoubleitem{Guitar}{Piano}
+%     \cvlistdoubleitem{Cycling}{Swimming}
+%     \cvlistdoubleitem{Philosophy}{Psychology}
+% 
+%----------------------------------------------------------------------------------------
+%	Websites and contact section
+%---------------------------------------------------------------------------------------
+     
+\section{Other contact and websites}
+
+    \subsection{Other contact}
+        \begin{indentpar}{72pt}
+            \begin{itemize}
+                \item Geometric and Graphics Group email: \emaillink{csoriano@ima.udg.edu}
+                \item Gnome email: \emaillink{csoriano@src.gnome.org}
+            \end{itemize}           
+        \end{indentpar}
+        
+    \subsection{Websites}
+        \begin{indentpar}{72pt}
+            \begin{itemize}
+                \item GitHub: \httplink{https://github.com/csoriano89}
+            \end{itemize}            
+        \end{indentpar}
+
+\end{document}
